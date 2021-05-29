@@ -5,6 +5,6 @@ import "fmt"
 func main() {
 	var firstName string = "John"
 	lastName := "Doe"
-	fullName := fmt.Sprintf("%s %s", firstName ,lastName)
+	fullName := fmt.Sprintf("%v %v", firstName ,lastName)
 	fmt.Println(fullName)
 }

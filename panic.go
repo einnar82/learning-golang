@@ -13,8 +13,8 @@ func panicker() {
 		}
 	}()
 	fmt.Println("done panicking")
-	panic("something happened here")
-	
+	panic("\nsomething happened here")
+
 }
 
 func main() {

@@ -12,6 +12,21 @@ var waitGroup = sync.WaitGroup{}
 var counter = 0
 var mutex = sync.RWMutex{}
 
+// use sync.WaitGroup to wait groups of
+// goroutine to complete
+
+// use sync.Mutex and sync.RWMutex to protect data access
+
+/**
+*	Parallelism, by default Go will use CPU threads equal to available cores.
+*	You can change it via runtime.GOMAXPROCS
+*   More threads can increase performance, but too many can slow it down.
+* 	Let consumer control concurrency.
+*
+* 	when creating a goroutine, know how it will end.
+* 	Avoid subtle memory leaks.
+* 	Check for race conditions at compile time.
+**/
 func main() {
 	// create OS thread
 	// runtime.GOMAXPROCS(100)

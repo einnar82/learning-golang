@@ -13,6 +13,8 @@ var counter = 0
 var mutex = sync.RWMutex{}
 
 func main() {
+	// create OS thread
+	// runtime.GOMAXPROCS(100)
 	for i := 0; i < 10; i++ {
 		waitGroup.Add(2)
 		mutex.RLock()
